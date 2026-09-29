@@ -27,8 +27,16 @@ ya envuelve `_server.start()` en try/catch, pero el puerto único es el fix real
 | 8990 | Electrónica Experto | com.alfonso.electronicaexperto | chip blanco sobre cian (#06b6d4→#164e63), glifo `chip`; adaptive bg #0b7f99. TAMBIEN instalada en PC (Edge --app, carpeta C:\Users\USUARIO\ElectronicaExperto, acceso directo en Escritorio con app.ico) |
 | 8991 | Arquitectura Experto | com.alfonso.arquitecturaexperto | fachada colonial limena sobre terracota (#ea7a3c→#9a3412), glifo `fachada`; adaptive bg #c2551f. MEJORADA: motor con bloque de formulas (spec.formulas) + indice rapido de areas (TOC) en index.html |
 | 8993 | Producción Experto | com.alfonso.produccionexperto | grua torre blanca izando bloque sobre rojo (#dc2626→#7f1d1d), glifo `grua` (script local make_icon_grua.py); adaptive bg #b91c1c. MEJORADA: motor con ilustraciones SVG por leccion (spec.fig/figcap → assets/web/assets/img/*.svg, 23 imagenes propias); ademas hereda formulas+TOC de Arquitectura. Carpeta D:\especialista en produccion de obras |
+| 8994–9045 | (apps creadas después de Producción Experto: **completar desde el ports.md local de D:\**; este registro en GitHub quedó desfasado) | | |
+| 9046 | Fast Track PRO | com.alfonso.fasttrackpro | (ver ports.md local) — carpeta D:\aplicativo Fast Track pro |
+| 9047 | Decisiones PRO | com.alfonso.decisionespro | semilla magenta (#c026d3), splash #1e2a5e; clon de Fast Track PRO. Carpeta D:\Decisiones PRO. Repo GitHub: alfonsommc311-boop/decisiones-pro |
+| 9048 | GitHub PRO | com.alfonso.githubpro | grafo de commits (nodos verde #3fb950 y azul #58a6ff) sobre carbón (#0d1117), semilla azul #58a6ff; clon de Decisiones PRO. Motor con bloque `commands` (comandos y rutas) y terminal Git simulada (gitsim.js). Carpeta D:\GitHub PRO. Repo GitHub: alfonsommc311-boop/github-pro |
 
-**Próximo puerto libre: 8994.**
+**Próximo puerto libre: 9049** (verificar contra el ports.md local antes de asignar).
+
+Apps de la familia mencionadas en briefs pero sin puerto anotado aquí (están en el registro local): Riesgos Obra PRO, Jev PRO, Valoriza PRO, Legal Obra PRO, Control Gubernamental PRO, Planifica PRO, Oficina Técnica PRO, Negocia PRO, Metrados PRO, Liquida PRO, Informe Obra PRO, Gobierna PRO, Adicional y Deductivo PRO, Decora Fiestas PRO, Argumenta PRO.
+
+En GitHub solo están: decisiones-pro, github-pro y este skill. El resto vive solo en D:\ — conviene subirlas (repo privado por app) para tener respaldo.
 
 IMPORTANTE (aprendido en Arquitectura): los `id` de lecciones en catalog.js DEBEN ser ASCII
 (sin ñ ni tildes). El cargador lesson.html hace id.replace(/[^a-z0-9\-]/gi,'') y rompe cualquier
